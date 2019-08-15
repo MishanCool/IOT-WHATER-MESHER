@@ -16,3 +16,29 @@ $password = $_POST['password'];
 
 $sql = "SELECT email, password  FROM login";
 $result = $conn->query($sql);
+
+if ($result->num_rows > 0) 
+{
+    // output data of each row
+    while($row = $result->fetch_assoc()) 
+    {
+    	if ($row["email"]==$email && $row["password"]==$password) 
+        {
+            include 'home.html';
+        } 
+
+        else 
+        {
+            echo "Error: " . $sql . "<br>" . $conn->error;
+            
+        }
+
+    }
+} 
+else 
+{
+    echo "0 results";
+}
+$conn->close();
+
+?>
