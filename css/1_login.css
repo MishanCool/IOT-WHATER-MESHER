@@ -15,11 +15,6 @@ body{
 
 }
 
-.logo{
-	margin-top: 50px;
-}
-
-
 .loginbox{
 	margin-top: 100px;
 	width: 320px; /*loginsystem eka yatin thiyana kalu box eka haduva*/
@@ -100,4 +95,8 @@ body{
 .loginbox a:hover/*hover eken karanne curser eka link ekak udata genethdi link eke pata venaskaranava*/
 {
 	color: #ffc107;
+}
+
+.logo{
+	margin-top: 540px;
 }
