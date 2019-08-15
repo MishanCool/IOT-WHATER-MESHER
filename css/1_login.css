@@ -35,3 +35,64 @@ body{
     border-radius: 50px;
 
 }
+
+.loginbox h1{
+	margin: 0;
+	padding: 0 0 20px ;
+	text-align: center;
+	font-size: 30px;
+}
+
+.loginbox p{
+	margin: 0;
+	padding: 0;
+	font-weight: bold; /*userName password kiyana 2ka bold karanava*/
+}
+
+.loginbox input{
+	width: 90%; /*user name ekai password ekai dena thanvala diga*/
+	margin-bottom: 20px;
+}
+
+.loginbox input[type="text"],input[type="password"]
+{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+}
+
+.loginbox input[type="submit"] /*Log In button eka*/
+{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #fb2525;
+	color: #fff;/*login button eke thiyana Log In eka sudupata karanava*/
+	font-size: 18px;
+	border-radius: 20px;/*kotuvata thibba Log In buton eke kon rawm karanava*/
+
+}
+
+.loginbox input[type="submit"]:hover
+{
+	cursor: pointer;
+	background: #ffc107;
+	color: #000;
+}
+
+.loginbox a
+{
+	text-decoration: none;/*hyper links yatin thiyana under lines nathi karanava*/
+	font-size: 14px;
+	line-height: 20px;
+	color: darkgrey;
+}
+
+.loginbox a:hover/*hover eken karanne curser eka link ekak udata genethdi link eke pata venaskaranava*/
+{
+	color: #ffc107;
+}
