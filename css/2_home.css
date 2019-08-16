@@ -95,3 +95,24 @@ body{
 	border-color:white; /*set button border*/
 	border-width: 4px; /*set border width*/
 }
+
+.nav_bar .button button[type="button1"]:hover
+{
+	cursor: pointer;
+	background: #ffc107;
+	color: #000;
+}
+
+.nav_bar .button button[type="button2"]:hover
+{
+	cursor: pointer;
+	background: #ffc107;
+	color: #000;
+}
+
+.nav_bar .button button[type="button3"]:hover
+{
+	cursor: pointer;
+	background: #ffc107;
+	color: #000;
+}
