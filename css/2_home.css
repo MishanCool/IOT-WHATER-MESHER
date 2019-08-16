@@ -14,3 +14,26 @@ body{
     font-family: sans-serif;
 
 }
+
+.nav_bar{
+
+	
+	width: 600px; /*loginsystem eka yatin thiyana kalu box eka haduva*/
+	height: 720px;
+    background:darkblue;
+	color: #fff; 
+	top: 0%;
+	left: 0%;  
+	position: absolute; 
+	box-sizing: border-box;
+
+	/*padding: 70px 30px; mekath hari. yatin thiyana visiyata 2k liwvath hari*/
+	padding-left: 30px;
+    padding-top: 70px;
+
+}
+
+.nav_bar .logo{
+	margin-top: -20px;
+	margin-left: 10px;
+}
