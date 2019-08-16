@@ -1,0 +1,16 @@
+*{
+	margin-top:  0px;
+	padding-top: 0px;
+	
+}
+
+body{
+
+	margin: 0;
+	padding: 0;
+	background-image: url('../img/Home_Page.jpg');
+	background-size: cover; 
+	/* background-position: center; */
+    font-family: sans-serif;
+
+}
