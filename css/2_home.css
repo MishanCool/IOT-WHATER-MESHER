@@ -96,6 +96,26 @@ body{
 	border-width: 4px; /*set border width*/
 }
 
+.nav_bar .button button[type="button4"]
+{
+	margin-top: 50px;
+	margin-left: 50px;
+
+	font-size: 20px; /*set font size*/
+	color: #fff;  /*login buton eke nama sudupata karanava*/
+
+	width: 300px; /*set button Width and height*/
+	height: 50px;
+
+
+	border-radius: 20px;
+	background-color: darkblue;  /*set button color*/
+
+	border-color:white; /*set button border*/
+	border-width: 4px; /*set border width*/
+
+}
+
 .nav_bar .button button[type="button1"]:hover
 {
 	cursor: pointer;
@@ -111,6 +131,13 @@ body{
 }
 
 .nav_bar .button button[type="button3"]:hover
+{
+	cursor: pointer;
+	background: #ffc107;
+	color: #000;
+}
+
+.nav_bar .button button[type="button4"]:hover
 {
 	cursor: pointer;
 	background: #ffc107;
