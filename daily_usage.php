@@ -24,6 +24,14 @@
             die("Connection failed: " . $conn->connect_error);
         } 
     ?>
+
+    <div class="table">
+
+        <div class="logo"> 
+            <img src="img/Logo_Design.png" alt="Logo" width="500" height="150" >
+        </div>
+
+    </div>
     
 </body>
 </html>
