@@ -25,6 +25,12 @@
         } 
     ?>
 
+    <div class="nav_bar">
+        <li>Notification</li>
+        <li>Back</li>
+        <li>Log Out</li>
+    </div>
+
     
     <div class="bill_background">
 
