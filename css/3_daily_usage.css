@@ -15,9 +15,9 @@ body{
 
 }
 
-.table_background{
+.bill_background{
 
-	width: 600px; /*loginsystem eka yatin thiyana kalu box eka haduva*/
+	width: 850px; /*loginsystem eka yatin thiyana kalu box eka haduva*/
 	height: 720px;
     background:darkblue;
 	color: #fff; 
@@ -32,7 +32,17 @@ body{
 
 }
 
-.table_background .logo{
+.bill_background .logo{
 	margin-top: -20px;
 	margin-left: 10px;
+}
+
+.nav_bar{
+	width: 800px;
+	height: 80px;
+	background: black;
+	color: #fff;
+
+	margin-left: 840px;
+	 
 }
