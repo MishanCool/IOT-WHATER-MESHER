@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
-    
+    <link rel="stylesheet" type="text/css" href="css/4_daily_usage.css">
 
 </head>
 <body>
@@ -30,6 +30,7 @@
         <div class="logo"> 
             <img src="img/Logo_Design.png" alt="Logo" width="500" height="150" >
         </div>
+
 
     </div>
 
