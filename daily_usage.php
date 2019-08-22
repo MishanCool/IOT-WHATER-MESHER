@@ -39,6 +39,7 @@
             $total=0;
             $count=0;
             $mean=0;
+            $daily_water_usage=0;
 
             $sql = "SELECT speed, date FROM iot_water";
             $result = $conn->query($sql);
@@ -58,7 +59,9 @@
 
                 $mean=$total/$count;
 
-                echo $mean;
+                $daily_water_usage = $total/3600; 
+
+                echo "Daily whater usage = $daily_water_usage Leaters";
 
             } 
             else 
