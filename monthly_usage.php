@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
-    <link rel="stylesheet" type="text/css" href="css/4_daily_usage.css">
+    <link rel="stylesheet" type="text/css" href="css/4_monthly_usage.css">
 
 </head>
 <body>
@@ -30,6 +30,42 @@
         <div class="logo"> 
             <img src="img/Logo_Design.png" alt="Logo" width="500" height="150" >
         </div>
+
+        <?php
+
+            $total=0;
+            $count=0;
+            $mean=0;
+
+            $sql = "SELECT speed, date FROM iot_water where MONTH(CURDATE())";
+            $result = $conn->query($sql);
+
+            
+            if ($result->num_rows > 0) 
+            {
+                
+                // output data of each row
+                while($row = $result->fetch_assoc()) 
+                {
+                
+                    $count=$count+1;
+                    $total= $total + $row["speed"];
+                
+                }
+
+                $mean=$total/$count;
+
+                echo $mean;
+
+            } 
+            else 
+            {
+                echo "0 results";
+            }
+            $conn->close();
+
+
+        ?>
 
 
     </div>
