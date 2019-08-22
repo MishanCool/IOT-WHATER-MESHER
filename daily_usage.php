@@ -26,9 +26,13 @@
     ?>
 
     <div class="nav_bar">
-        <li>Notification</li>
-        <li>Back</li>
-        <li>Log Out</li>
+
+    <ul>
+        <li><a href="">NOTIFICATION</a></li>
+        <li><a href="home.html">BACK</a></li>
+        <li><a href="">LOG OUT</a></li>
+    </ul>
+
     </div>
 
     
