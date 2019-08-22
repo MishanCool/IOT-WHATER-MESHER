@@ -42,6 +42,30 @@
 
             $sql = "SELECT speed, date FROM iot_water";
             $result = $conn->query($sql);
+
+            if ($result->num_rows > 0) 
+            {
+                
+                // output data of each row
+                while($row = $result->fetch_assoc()) 
+                {
+                    if($date==$row["date"])
+                    {
+                        $count=$count+1;
+                        $total= $total + $row["speed"];
+                    }
+                }
+
+                $mean=$total/$count;
+
+                echo $mean;
+
+            } 
+            else 
+            {
+                echo "0 results";
+            }
+            $conn->close();
         ?>
 
     </div>    
