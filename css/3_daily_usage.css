@@ -44,5 +44,37 @@ body{
 	color: #fff;
 
 	margin-left: 840px;
+	top: 0%;
+
+	/*background: linear-gradient(#333,#444,#333)*/
+	text-align: center;
+	border-radius: 5px;
 	 
+}
+
+.nav_bar ul{
+	margin: 100px;
+	list-style: none;
+}
+
+.nav_bar ul li{
+	padding:0 50px; /*link word athara space hadanava*/
+	display: inline-block;
+	margin-top: 35px;
+	border-right: 1px solid white; /*link word athara '|' lakuna danava*/
+}
+
+.nav_bar ul li:last-child{ /*last child ge '|' anthimata thiyana border eka ain karannava*/
+	border: none;
+}
+
+.nav_bar ul li a
+{
+
+	color: white;
+}
+
+.nav_bar ul li a:hover
+{
+	color: #ffc107;
 }
