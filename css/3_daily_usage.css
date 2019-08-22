@@ -38,13 +38,12 @@ body{
 }
 
 .nav_bar{
-	width: 800px;
+	width: 706px;
 	height: 80px;
 	background: black;
 	color: #fff;
-
-	margin-left: 840px;
-	top: 0%;
+	margin-top: -100px;
+	margin-left: 830px;
 
 	/*background: linear-gradient(#333,#444,#333)*/
 	text-align: center;
@@ -53,8 +52,12 @@ body{
 }
 
 .nav_bar ul{
-	margin: 100px;
+	
+	/* margin: 50px;  */
+	margin-top: 100px;
+	margin-left: -40px;
 	list-style: none;
+
 }
 
 .nav_bar ul li{
@@ -62,6 +65,7 @@ body{
 	display: inline-block;
 	margin-top: 35px;
 	border-right: 1px solid white; /*link word athara '|' lakuna danava*/
+	
 }
 
 .nav_bar ul li:last-child{ /*last child ge '|' anthimata thiyana border eka ain karannava*/
@@ -70,8 +74,9 @@ body{
 
 .nav_bar ul li a
 {
-
+	/* margin-left: -50px; */
 	color: white;
+	text-decoration: none;   /*hyperlink yatin thiyana ira nathikaranava*/
 }
 
 .nav_bar ul li a:hover
