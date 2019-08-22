@@ -30,7 +30,19 @@
 
         <div class="logo"> 
             <img src="img/Logo_Design.png" alt="Logo" width="500" height="150" >
-        </div>    
+        </div>
+        
+        <?php
+            
+            $date = date('Y-m-d');
+
+            $total=0;
+            $count=0;
+            $mean=0;
+
+            $sql = "SELECT speed, date FROM iot_water";
+            $result = $conn->query($sql);
+        ?>
 
     </div>    
     
