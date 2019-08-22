@@ -26,7 +26,7 @@
     ?>
 
     
-    <div class="table_background">
+    <div class="bill_background">
 
         <div class="logo"> 
             <img src="img/Logo_Design.png" alt="Logo" width="500" height="150" >
