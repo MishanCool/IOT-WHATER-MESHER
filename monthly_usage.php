@@ -33,9 +33,15 @@
 
         <?php
 
+            $time = date('H:i:s');
+            $date = date('Y-m-d');
+
+
             $total=0;
             $count=0;
             $mean=0;
+            $monthly_water_usage=0;
+            $pay=0;
 
             $sql = "SELECT speed, date FROM iot_water where MONTH(CURDATE())";
             $result = $conn->query($sql);
@@ -55,8 +61,20 @@
 
                 $mean=$total/$count;
 
-                echo $mean;
+                $monthly_water_usage = round($total/3600,3);
 
+                $pay = sprintf('%0.2f', $monthly_water_usage * 100);
+
+
+                echo '<div class="bill">';
+
+                    echo '<h3>'.$time.'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.$date.'<h3>'.'<br><br>';
+
+                    echo '<h2>Daily whater usage = ' .$monthly_water_usage .' Leaters<h2>'.'<br>';
+
+                    echo '<h2>Charge for water consumed = ' . $pay .' Rs<h2>'.'<br>';
+
+                echo'</div>';
             } 
             else 
             {
