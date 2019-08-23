@@ -7,6 +7,29 @@
     <title>Document</title>
 
     <link rel="stylesheet" type="text/css" href="css/3_daily_usage.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.css" /> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
+    
+    <script>
+    
+    $(document).ready(function() {
+    var calendar = $('#calendar').fullCalendar({
+        editable:true,
+        header:{
+        left:'prev,next today',
+        center:'title',
+        right:'month,agendaWeek,agendaDay'
+        },
+       
+    });
+    });
+    
+    </script>
     
 </head>
 <body>
@@ -30,7 +53,7 @@
     <ul>
         <li><a href="">NOTIFICATION</a></li>
         <li><a href="home.html">BACK</a></li>
-        <li><a href="">LOG OUT</a></li>
+        <li><a href="logout.php">LOG OUT</a></li>
     </ul>
 
     </div>
@@ -44,12 +67,14 @@
         
         <?php
             
+            $time = date('H:i:s');
             $date = date('Y-m-d');
 
             $total=0;
             $count=0;
             $mean=0;
             $daily_water_usage=0;
+            $pay=0;
 
             $sql = "SELECT speed, date FROM iot_water";
             $result = $conn->query($sql);
@@ -69,9 +94,20 @@
 
                 $mean=$total/$count;
 
-                $daily_water_usage = $total/3600; 
+                $daily_water_usage = round($total/3600,3);
 
-                echo "Daily whater usage = $daily_water_usage Leaters";
+                $pay = sprintf('%0.2f', $daily_water_usage * 100);
+
+
+                echo '<div class="bill">';
+
+                    echo '<h3>'.$time.'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.$date.'<h3>'.'<br><br>';
+
+                    echo '<h2>Daily whater usage = ' .$daily_water_usage .' Leaters<h2>'.'<br>';
+
+                    echo '<h2>Charge for water consumed = ' . $pay .' Rs<h2>'.'<br>';
+
+                echo'</div>';
 
             } 
             else 
@@ -81,7 +117,12 @@
             $conn->close();
         ?>
 
-    </div>    
+    </div>
+    
+    <div class="container">
+        <div id="calendar">
+        </div>
+    </div>
     
 </body>
 </html>
