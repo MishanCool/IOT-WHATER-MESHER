@@ -144,3 +144,12 @@ body{
 	background: #ffc107;
 	color: #000;
 }
+
+.container #calendar
+{
+    width: 335px;
+    height: 328px;
+	background:gray;
+	margin-left: 1200px;
+	margin-top: -57px;
+} 
