@@ -58,7 +58,6 @@
 
     </div>
 
-
     <div class="bill_background">
 
         <div class="logo"> 
@@ -88,9 +87,9 @@
                 while($row = $result->fetch_assoc()) 
                 {
                 
-                    $count=$count+1;
-                    $total= $total + $row["speed"];
-                
+                        $count=$count+1;
+                        $total= $total + $row["speed"];
+                    
                 }
 
                 $mean=$total/$count;
@@ -109,6 +108,7 @@
                     echo '<h2>Charge for water consumed = ' . $pay .' Rs<h2>'.'<br>';
 
                 echo'</div>';
+
             } 
             else 
             {
@@ -118,7 +118,7 @@
 
 
         ?>
-
+        
     </div>
 
     <div class="container">
