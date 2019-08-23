@@ -37,6 +37,13 @@ body{
 	margin-left: 10px;
 }
 
+.bill_background .bill
+{
+	margin-top: 90px;
+	margin-left: 70px;
+}
+
+
 .nav_bar{
 	width: 706px;
 	height: 80px;
@@ -83,3 +90,12 @@ body{
 {
 	color: #ffc107;
 }
+
+.container #calendar
+{
+    width: 335px;
+    height: 328px;
+	background:gray;
+	margin-left: 1200px;
+	margin-top: 0px;
+} 
