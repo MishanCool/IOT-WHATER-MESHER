@@ -15,9 +15,9 @@ body{
 
 }
 
-.table_background{
+.bill_background{
 
-	width: 600px; /*loginsystem eka yatin thiyana kalu box eka haduva*/
+	width: 850px; /*loginsystem eka yatin thiyana kalu box eka haduva*/
 	height: 720px;
     background:darkblue;
 	color: #fff; 
@@ -32,7 +32,70 @@ body{
 
 }
 
-.table_background .logo{
+.bill_background .logo{
 	margin-top: -20px;
 	margin-left: 10px;
 }
+
+.bill_background .bill
+{
+	margin-top: 90px;
+	margin-left: 70px;
+}
+
+
+.nav_bar{
+	width: 706px;
+	height: 80px;
+	background: black;
+	color: #fff;
+	margin-top: -100px;
+	margin-left: 830px;
+
+	/*background: linear-gradient(#333,#444,#333)*/
+	text-align: center;
+	border-radius: 5px;
+	 
+}
+
+.nav_bar ul{
+	
+	/* margin: 50px;  */
+	margin-top: 100px;
+	margin-left: -40px;
+	list-style: none;
+
+}
+
+.nav_bar ul li{
+	padding:0 50px; /*link word athara space hadanava*/
+	display: inline-block;
+	margin-top: 35px;
+	border-right: 1px solid white; /*link word athara '|' lakuna danava*/
+	
+}
+
+.nav_bar ul li:last-child{ /*last child ge '|' anthimata thiyana border eka ain karannava*/
+	border: none;
+}
+
+.nav_bar ul li a
+{
+	/* margin-left: -50px; */
+	color: white;
+	text-decoration: none;   /*hyperlink yatin thiyana ira nathikaranava*/
+}
+
+.nav_bar ul li a:hover
+{
+	color: #ffc107;
+}
+
+.container #calendar
+{
+    width: 335px;
+    height: 328px;
+	background:gray;
+	margin-left: 1200px;
+	margin-top: 0px;
+} 
