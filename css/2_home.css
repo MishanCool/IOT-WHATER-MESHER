@@ -151,5 +151,49 @@ body{
     height: 328px;
 	background:gray;
 	margin-left: 1200px;
-	margin-top: -57px;
+	margin-top: 40px;
 } 
+
+.logout{
+	width: 335px;
+	height: 80px;
+	background: black;
+	color: #fff;
+	margin-top: -508px;
+	margin-left: 1200px;
+
+	/*background: linear-gradient(#333,#444,#333)*/
+	text-align: center;
+	border-radius: 5px;
+	 
+}
+
+.logout ul{
+	
+	/* margin: 50px;  */
+	margin-top: 100px;
+	margin-left: -40px;
+	list-style: none; /*list eke ena thith nathi karanava*/
+
+}
+
+.logout ul li{
+	/*padding:0 50px; /*link word athara space hadanava*/
+	display: inline-block;
+	margin-top: 35px;
+	/*border-right: 1px solid white; /*link word athara '|' lakuna danava*/
+	
+}
+
+
+.logout ul li a
+{
+	/* margin-left: -50px; */
+	color: white;
+	text-decoration: none;   /*hyperlink yatin thiyana ira nathikaranava*/
+}
+
+.logout ul li a:hover
+{
+	color: #ffc107;
+}
