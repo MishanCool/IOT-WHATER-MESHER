@@ -105,7 +105,7 @@
 
                     echo '<h3>'.$time.'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.$date.'<h3>'.'<br><br>';
 
-                    echo '<h2>Daily whater usage = ' .$daily_water_usage .' Leaters<h2>'.'<br>';
+                    echo '<h2>Daily whater usage = ' .$daily_water_usage .' Liters<h2>'.'<br>';
 
                     echo '<h2>Charge for water consumed = ' . $pay .' Rs<h2>'.'<br>';
 
