@@ -66,6 +66,8 @@
 
         <?php
 
+            date_default_timezone_set('Asia/Kolkata');
+
             $time = date('H:i:s');
             $date = date('Y-m-d');
 
@@ -103,7 +105,7 @@
 
                     echo '<h3>'.$time.'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.$date.'<h3>'.'<br><br>';
 
-                    echo '<h2>Daily whater usage = ' .$monthly_water_usage .' Leaters<h2>'.'<br>';
+                    echo '<h2>Monthly whater usage = ' .$monthly_water_usage .' Leaters<h2>'.'<br>';
 
                     echo '<h2>Charge for water consumed = ' . $pay .' Rs<h2>'.'<br>';
 
@@ -112,7 +114,9 @@
             } 
             else 
             {
-                echo "0 results";
+                echo'<div class="not_use">';
+                    echo '<h1>You didn\'t use water this month<h1>';
+                echo'</div>';
             }
             $conn->close();
 
