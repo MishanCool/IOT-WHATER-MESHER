@@ -67,6 +67,8 @@
         
         <?php
             
+            date_default_timezone_set('Asia/Kolkata');
+
             $time = date('H:i:s');
             $date = date('Y-m-d');
 
@@ -92,7 +94,7 @@
                     }
                 }
 
-                $mean=$total/$count;
+                // $mean=$total/$count;
 
                 $daily_water_usage = round($total/3600,3);
 
@@ -112,7 +114,10 @@
             } 
             else 
             {
-                echo "0 results";
+                echo'<div class="not_use">';
+                    echo '<h1>You didn\'t use water today<h1>';
+                echo'</div>';
+
             }
             $conn->close();
         ?>
