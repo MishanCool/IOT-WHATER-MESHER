@@ -13,18 +13,9 @@
     }
     
     $speed
+    $date = date('Y-m-d');
 
-    $sql = "INSERT INTO iot_water (
-    VALUES ('John', 'Doe', 'john@example.com')";
-
-    if ($conn->query($sql) === TRUE) 
-    {
-        echo "New record created successfully";
-    } 
-    else 
-    {
-        echo "Error: " . $sql . "<br>" . $conn->error;
-    }
+    INSERT INTO iot_water (speed , date) VALUES ($speed , $date);
 
     $conn->close();
 ?>
