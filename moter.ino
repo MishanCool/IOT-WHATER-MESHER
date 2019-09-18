@@ -52,7 +52,7 @@ void loop() {
 
    Serial.println("connected");
    
-   client.print("GET /write_data.php?");
+   client.print("GET /sensor.php?");
    client.print("value=");
    client.print(ledStatus);
    client.println("HTTP/1.1"); // Part of the GET request
